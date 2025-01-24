@@ -1,0 +1,131 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0 50px;
+    padding: 0; 
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:visited {
+    color: #000;
+}
+
+.logo {
+    height: 50px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 0;
+}
+
+.plot-section {
+    text-align: center; 
+    padding: 20px; 
+}
+
+.plot-title {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.plot-description {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.emotion {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.emotion img {
+    border-radius: 50%;
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    margin-left: 200px;
+}
+
+.emotion p, figcaption {
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+.white-background {
+    background-color: #ffffff;
+    
+}
+
+.gray-background {
+    background-color: #f8f8f8;
+}
+
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.emotions-header {
+    position: relative;
+    text-align: center;
+}
+
+.emotions-background {
+    width: 100%;
+    height: auto;
+}
+
+.emotions-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+}
