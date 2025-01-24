@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url(./fonts/Lobster/Lobster-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Oswald'; 
+	src: url(./fonts/Oswald/Oswald-VariableFont_wght.ttf); 
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(./fonts/Myfont-Regular.ttf);
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 50px;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+}
+
+p{
+    text-align: justify;
+}
+
+.inside_out_2{
+    font-family: 'MyFont';
+    text-align: center;
+}
+
+.rise_of_the_guardians{
+    font-family: 'Lobster';
+    text-align: justify;
+}
+
+.soul{
+    font-family: 'Oswald';
+    text-align: left;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #b8b8b8;
+}
+
+img {
+    margin: 5px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+}
