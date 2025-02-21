@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dop.css">
+    <title>Flex-dop</title>
+</head>
+<body>
+    <h1>Свойства flexbox</h1>
+
+    <div class="dir">
+        <p>flex-direction</p>
+        <button onclick="setFlexDirection('row')">Row</button>
+        <button onclick="setFlexDirection('row-reverse')">Row-reverse</button>
+        <button onclick="setFlexDirection('column')">Column</button>
+        <button onclick="setFlexDirection('column-reverse')">Column-reverse</button>
+    </div>
+
+    <div class="container1">
+        <div class="el1">
+            <p>1</p>
+        </div>
+        <div class="el2">
+            <p>2</p>
+        </div>
+        <div class="el3">
+            <p>3</p>
+        </div>
+        <div class="el4">
+            <p>4</p>
+        </div>
+    </div>
+
+    <div class="jus">
+        <p>justify-content</p>
+        <button onclick="setJustifyContent('flex-start')">Flex-start</button>
+        <button onclick="setJustifyContent('flex-end')">Flex-end</button>
+        <button onclick="setJustifyContent('center')">Center</button>
+        <button onclick="setJustifyContent('space-between')">Space-between</button>
+        <button onclick="setJustifyContent('space-around')">Space-around</button>
+        <button onclick="setJustifyContent('space-evenly')">Space-evenly</button>
+    </div>
+
+    <div class="container2">
+        <div class="el1">
+            <p>1</p>
+        </div>
+        <div class="el2">
+            <p>2</p>
+        </div>
+        <div class="el3">
+            <p>3</p>
+        </div>
+        <div class="el4">
+            <p>4</p>
+        </div>
+    </div>
+
+    <div class="al">
+        <p>align-items</p>
+        <button onclick="setAlignItems('flex-start')">Flex-start</button>
+        <button onclick="setAlignItems('flex-end')">Flex-end</button>
+        <button onclick="setAlignItems('center')">Center</button>
+        <button onclick="setAlignItems('baseline')">Baseline</button>
+        <button onclick="setAlignItems('stretch')">Stretch</button>
+    </div>
+    
+
+    <div class="container3">
+        <div class="el1">
+            <p>1</p>
+        </div>
+        <div class="el2">
+            <p>2</p>
+        </div>
+        <div class="el3">
+            <p>3</p>
+        </div>
+        <div class="el4">
+            <p>4</p>
+        </div>
+    </div>
+
+    <script src="dop.js"></script>
+</body>
+</html>
