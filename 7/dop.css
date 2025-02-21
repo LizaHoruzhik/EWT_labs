@@ -25,19 +25,25 @@ h1 {
     text-align: center;
 }
 
-.el1 {
+.el3-1, .el3-2, .el3-3, .el3-4 {
+    width: 100px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.el1, .el3-1 {
     background-color: rgb(232, 101, 101);
 }
 
-.el2 {
+.el2, .el3-2 {
     background-color: rgb(252, 252, 116);
 }
 
-.el3 {
+.el3, .el3-3 {
     background-color: rgb(97, 218, 97);
 }
 
-.el4 {
+.el4, .el3-4 {
     background-color: rgb(119, 119, 245);
 }
 
