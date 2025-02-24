@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dop.css">
+    <title>Grid-dop</title>
+</head>
+<body>
+    <h1>Свойства grid</h1>
+
+    <div class="gap">
+        <p>gap</p>
+        <button onclick="setGap('5px', this)" class="active">5px</button>
+        <button onclick="setGap('5px 20px', this)">5px 20px</button>
+        <button onclick="setGap('5%', this)">5%</button>
+        <button onclick="setGap('1em', this)">1em</button>
+        <button onclick="setGap('calc(5% + 5px)', this)">calc(5% + 5px)</button>
+        <button onclick="setGap('normal', this)">normal</button>
+    </div>
+
+    <div class="container1">
+        <div class="el"><p>1</p></div>
+        <div class="el"><p>2</p></div>
+        <div class="el"><p>3</p></div>
+        <div class="el"><p>4</p></div>
+        <div class="el"><p>5</p></div>
+        <div class="el"><p>6</p></div>
+        <div class="el"><p>7</p></div>
+        <div class="el"><p>8</p></div>
+        <div class="el"><p>9</p></div>
+    </div>
+
+    <div class="jus">
+        <p>justify-items</p>
+        <button onclick="setJustifyItems('start', this)" class="active">Start</button>
+        <button onclick="setJustifyItems('end', this)">End</button>
+        <button onclick="setJustifyItems('center', this)">Center</button>
+        <button onclick="setJustifyItems('stretch', this)">Stretch</button>
+    </div>
+
+    <div class="container2">
+        <div class="el"><p>1</p></div>
+        <div class="el"><p>2</p></div>
+        <div class="el"><p>3</p></div>
+        <div class="el"><p>4</p></div>
+        <div class="el"><p>5</p></div>
+        <div class="el"><p>6</p></div>
+        <div class="el"><p>7</p></div>
+        <div class="el"><p>8</p></div>
+        <div class="el"><p>9</p></div>
+    </div>
+
+    <div class="al">
+        <p>align-items</p>
+        <button onclick="setAlignItems('start', this)" class="active">Start</button>
+        <button onclick="setAlignItems('end', this)">End</button>
+        <button onclick="setAlignItems('center', this)">Center</button>
+        <button onclick="setAlignItems('stretch', this)">Stretch</button>
+    </div>
+    
+    <div class="container3">
+        <div class="el"><p>1</p></div>
+        <div class="el"><p>2</p></div>
+        <div class="el"><p>3</p></div>
+        <div class="el"><p>4</p></div>
+        <div class="el"><p>5</p></div>
+        <div class="el"><p>6</p></div>
+        <div class="el"><p>7</p></div>
+        <div class="el"><p>8</p></div>
+        <div class="el"><p>9</p></div>
+    </div>
+    
+    <script src="dop.js"></script>
+</body>
+</html>

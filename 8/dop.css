@@ -1,0 +1,47 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.gap, .jus, .al {
+    margin: 0 10px;
+}
+
+.container1, .container2, .container3 {
+    margin: 10px;
+    height: 200px;
+    width: 100%;
+    border: solid 1px rgb(85, 85, 85);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.el{
+    min-height: 50px;
+    min-width: 50px;
+    text-align: center;
+    background-color: rgb(119, 119, 245);
+    border: solid 1px rgb(85, 85, 85);
+}
+
+button {
+    background-color: white;
+    border: solid 1px rgb(85, 85, 85);
+    border-radius: 5px;
+    height: 25px;
+}
+
+button.active {
+    background-color: gray;
+    color: white;
+}
+
+#g3{
+    display: grid;
+    justify-items: stretch;
+}
