@@ -1,0 +1,61 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+.images {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+img {
+    width: 250px;
+    object-fit: cover;
+    position: relative;
+}
+
+img:hover {
+    animation: sc 1s forwards;
+}
+
+@keyframes sc{
+    0% {}
+    100% {transform: scale(1.5);
+        z-index: 10;}
+}
+
+@media (max-width: 1250px) {
+    .images img:nth-child(2) {
+        left: calc((-1250px + 100vw) / 4); 
+        top: calc((1250px - 100vw) / 4);
+    }
+    .images img:nth-child(3) {
+        left: calc((-1250px + 100vw) / 4 * 2); 
+        top: calc((1250px - 100vw) / 4 * 2);
+    }
+    .images img:nth-child(4) {
+        left: calc((-1250px + 100vw) / 4 * 3); 
+        top: calc((1250px - 100vw) / 4 * 3);
+    }
+    .images img:nth-child(5) {
+        left: calc((-1250px + 100vw) / 4 * 4); 
+        top: calc((1250px - 100vw) / 4 * 4);
+    }
+}
