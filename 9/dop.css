@@ -32,13 +32,15 @@ img {
 }
 
 img:hover {
+    z-index: 10; 
     animation: sc 1s forwards;
 }
 
 @keyframes sc{
     0% {}
-    100% {transform: scale(1.5);
-        z-index: 10;}
+    100% {
+        transform: scale(1.5);
+        }
 }
 
 @media (max-width: 1250px) {
