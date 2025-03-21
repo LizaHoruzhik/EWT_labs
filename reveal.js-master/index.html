@@ -46,7 +46,9 @@
 
             <section data-transition="slide">
                 <h3>Синтаксис Fetch API</h3>
-                <pre><code>let promise = fetch(url, [options]);</code></pre>
+                <pre>
+                    <code>let promise = fetch(url, [options]);</code>
+                </pre>
                 <aside class="notes">
                     Основной синтаксис для выполнения сетевого запроса с использованием Fetch API.
                 </aside>
@@ -100,20 +102,24 @@
 
             <section data-transition="slide">
                 <h3>Пример кода: Использование Fetch API</h3>
-                <pre><code>fetch('https://api.example.com/data', {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json'
-    }
-})
-.then(response => {
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-    return response.json();
-})
-.then(data => console.log(data))
-.catch(error => console.error('Ошибка:', error));</code></pre>
+                <pre>
+                    <code>
+                        fetch('https://api.example.com/data', {
+                            method: 'GET',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.json();
+                        })
+                        .then(data => console.log(data))
+                        .catch(error => console.error('Ошибка:', error));
+                    </code>
+                </pre>
                 <aside class="notes">
                     Пример выполнения GET запроса с обработкой ответа и ошибок.
                 </aside>
@@ -136,7 +142,8 @@
     <script>
         Reveal.initialize({
             hash: true,
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+            slideNumber: true
         });
     </script>
 </body>
