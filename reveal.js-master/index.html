@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Сетевые Запросы</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-transition="slide">
+                <h2>Сетевые Запросы</h2>
+                <aside class="notes">
+                    Введение в тему сетевых запросов и их важность в веб-разработке.
+                </aside>
+            </section>
+
+            <section data-transition="slide">
+                <h3>Что такое сетевые запросы?</h3>
+                <p>Обмен данными между клиентом и сервером.</p>
+                <aside class="notes">
+                    Сетевые запросы позволяют клиентам получать и отправлять данные на сервер.
+                </aside>
+            </section>
+
+            <section data-transition="slide">
+                <h3>Методы HTTP</h3>
+                <ul>
+                    <li>GET</li>
+                    <li>POST</li>
+                    <li>PUT</li>
+                    <li>DELETE</li>
+                    <li>PATCH</li>
+                    <li>OPTIONS</li>
+                </ul>
+                <aside class="notes">
+                    Каждый метод имеет свои цели и используется для выполнения различных операций с ресурсами.
+                </aside>
+            </section>
+
+            <section data-transition="slide">
+                <h3>Синтаксис Fetch API</h3>
+                <pre><code>let promise = fetch(url, [options]);</code></pre>
+                <aside class="notes">
+                    Основной синтаксис для выполнения сетевого запроса с использованием Fetch API.
+                </aside>
+            </section>
+
+            <section data-transition="slide">
+                <h3>Параметры options</h3>
+                <ul>
+                    <li><strong>method</strong>: Метод запроса (GET, POST и т.д.)</li>
+                    <li><strong>headers</strong>: Заголовки запроса</li>
+                    <li><strong>body</strong>: Тело запроса (для POST и PUT)</li>
+                    <li><strong>mode</strong>: Режим CORS (cors, no-cors, same-origin)</li>
+                    <li><strong>credentials</strong>: Уровень доступа к кукам</li>
+                </ul>
+                <aside class="notes">
+                    Эти параметры позволяют настроить запрос в зависимости от требований.
+                </aside>
+            </section>
+
+            <section data-transition="slide">
+                <h3>Promise в Fetch API</h3>
+                <p>
+                    Fetch возвращает Promise, который разрешается при получении ответа от сервера.
+                </p>
+                <p>
+                    Promise представляет собой объект, который может быть в одном из трех состояний:
+                </p>
+                <ul>
+                    <li><strong>Ожидание (Pending)</strong>: начальное состояние, запрос еще не завершен.</li>
+                    <li><strong>Исполнено (Fulfilled)</strong>: запрос завершен успешно.</li>
+                    <li><strong>Отклонено (Rejected)</strong>: запрос завершен с ошибкой.</li>
+                </ul>
+                <aside class="notes">
+                    Promise позволяет обрабатывать асинхронные операции, используя методы .then() и .catch() для обработки результата и ошибок.
+                </aside>
+            </section>
+
+            <section data-transition="slide">
+                <h3>Объект Response</h3>
+                <p>Response содержит информацию о результате запроса.</p>
+                <ul>
+                    <li><strong>status</strong>: HTTP-статус ответа (например, 200, 404).</li>
+                    <li><strong>statusText</strong>: Описание статуса ответа.</li>
+                    <li><strong>headers</strong>: Заголовки ответа.</li>
+                    <li><strong>body</strong>: Тело ответа, которое можно обработать.</li>
+                </ul>
+                <aside class="notes">
+                    Объект Response предоставляет методы для обработки тела ответа, такие как response.json(), response.text(), response.blob() и другие.
+                </aside>
+            </section>
+
+            <section data-transition="slide">
+                <h3>Пример кода: Использование Fetch API</h3>
+                <pre><code>fetch('https://api.example.com/data', {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json'
+    }
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json();
+})
+.then(data => console.log(data))
+.catch(error => console.error('Ошибка:', error));</code></pre>
+                <aside class="notes">
+                    Пример выполнения GET запроса с обработкой ответа и ошибок.
+                </aside>
+            </section>
+
+            <section data-transition="slide">
+                <h3>Заключение</h3>
+                <p>Сетевые запросы — основа взаимодействия с веб-сервисами.</p>
+                <aside class="notes">
+                    Понимание сетевых запросов критически важно для разработки современных веб-приложений.
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
+</body>
+</html>
